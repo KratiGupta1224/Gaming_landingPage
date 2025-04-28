@@ -44,16 +44,41 @@ counters.forEach(counter => {
 });
 
 
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,        // Show 3 cards at a time
-    spaceBetween: 30,        // Space between cards
-    loop: true,              // Infinite loop
+  // var swiper = new Swiper('.swiper-container', {
+  //   slidesPerView: 3,        // Show 3 cards at a time
+  //   spaceBetween: 30,        // Space between cards
+  //   loop: true,              // Infinite loop
+  //   autoplay: {
+  //     delay: 3000,           // 3 seconds delay
+  //     disableOnInteraction: false,
+  //   },
+  //   speed: 800,              // Smooth transition speed
+  // });
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
     autoplay: {
-      delay: 3000,           // 3 seconds delay
+      delay: 3000,
       disableOnInteraction: false,
     },
-    speed: 800,              // Smooth transition speed
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 1,
+      },
+      0: {
+        slidesPerView: 1,
+      }
+    }
   });
+  
 
 
 
