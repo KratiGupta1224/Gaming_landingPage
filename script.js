@@ -24,3 +24,21 @@ const faqItems = document.querySelectorAll('.faq-item');
     menu.classList.toggle('hidden');
   });
 
+  const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText.replace('+', '');
+    const increment = target / 200; // Adjust speed here
+
+    if (current < target) {
+      counter.innerText = Math.ceil(current + increment) + '+';
+      setTimeout(updateCount, 20); // update every 20ms
+    } else {
+      counter.innerText = target + '+';
+    }
+  };
+
+  updateCount();
+});
