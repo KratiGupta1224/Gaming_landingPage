@@ -6,6 +6,12 @@
   <title>PLAYBRO - Welcome</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body class="text-white font-sans bg-gray-900">
   <!-- Navbar -->
@@ -119,6 +125,37 @@
           <p>Chess</p>
         </div>
         <div class="game-item">
+          <img src="Assets/bowling-128_512.gif" class="game-icon" />
+          <p>Bowling</p>
+        </div>
+        <div class="game-item">
+          <img src="Assets/ball-18425_512.gif" class="game-icon" />
+          <p>Soccer</p>
+        </div>
+        <div class="game-item">
+          <img src="Assets/chess-10326_512.gif" class="game-icon" />
+          <p>Chess</p>
+        </div>
+        <div class="game-item">
+          <img src="Assets/bowling-128_512.gif" class="game-icon" />
+          <p>Bowling</p>
+        </div>
+        <div class="game-item">
+          <img src="Assets/ball-18425_512.gif" class="game-icon" />
+          <p>Soccer</p>
+        </div>
+        <div class="game-item">
+          <img src="Assets/chess-10326_512.gif" class="game-icon" />
+          <p>Chess</p>
+        </div>
+        <div class="game-item">
+          <img src="Assets/bowling-128_512.gif" class="game-icon" />
+          <p>Bowling</p>
+        </div>
+      </div>
+
+      <div class="slider-track">
+        <div class="game-item">
           <img src="Assets/bin-6550_512.gif" class="game-icon" />
           <p>Basketball</p>
         </div>
@@ -131,12 +168,16 @@
           <p>Tennis</p>
         </div>
         <div class="game-item">
-          <img src="Assets/ball-18425_512.gif" class="game-icon" />
-          <p>Soccer</p>
+          <img src="Assets/bin-6550_512.gif" class="game-icon" />
+          <p>Basketball</p>
         </div>
         <div class="game-item">
-          <img src="Assets/chess-10326_512.gif" class="game-icon" />
-          <p>Chess</p>
+          <img src="Assets/dice-15656_512.gif" class="game-icon" />
+          <p>Casino</p>
+        </div>
+        <div class="game-item">
+          <img src="Assets/tennis-9361_512.gif" class="game-icon" />
+          <p>Tennis</p>
         </div>
         <div class="game-item">
           <img src="Assets/bin-6550_512.gif" class="game-icon" />
@@ -210,7 +251,40 @@
     </div>
   </section>
   
+  <div class="service-header">
+    <span class="highlight-orange">PLAY</span><span>BRO</span> SERVICES
+  </div>
 
+  <div class="service-subtitle">
+    Welcome to PlayBro - The World’s Biggest Betting Exchange.<br>
+    Enjoy Seamless Options for Sportsbook, Live Cards & Live Casino!
+  </div>
+
+  <div class="services">
+    <div class="service-item">
+      <div class="icon-circle">🏆</div>
+      <div class="service-title">Instant Deposit</div>
+      <div class="service-desc">
+        Fast, trustworthy deposits and withdrawals anytime you need.
+      </div>
+    </div>
+
+    <div class="service-item">
+      <div class="icon-circle">📞</div>
+      <div class="service-title">24/7 Support</div>
+      <div class="service-desc">
+        Always online to help you with anything, anytime, anywhere.
+      </div>
+    </div>
+
+    <div class="service-item">
+      <div class="icon-circle">🎁</div>
+      <div class="service-title">Referral Bonus</div>
+      <div class="service-desc">
+        Invite friends, share rewards, and enjoy more benefits with PlayBro!
+      </div>
+    </div>
+  </div>
 
   <!-- <div class="neon-text">The Best Game Experience</div>
 
@@ -246,46 +320,62 @@
     <p>Pursue life-changing fortunes with our Progressive Jackpot games, where the prize pool increases with every bet, offering you the chance to win extraordinary payouts that could turn your dreams into reality.</p>
   </div>
 </div> -->
-
 <div class="neon-text">The Best Game Experience</div>
 
-<div class="cards2">
-  <div class="card1">
-    <img src="Assets/Casino-seven-lucky-slot-machine (1).png" alt="Large game selection" />
-    <h3 class="size1">Large Game Selection</h3>
-    <p>Explore a massive library of classics and new hits. Your perfect game is just a click away.</p>
-  </div>
-  
-  <div class="card1">
-    <img src="Assets/Withdrawl-finance-economy-money-bank-payment-dollar.png" alt="Multiple payment options" />
-    <h3 class="size1">Multiple Payment Options</h3>
-    <p>Enjoy hassle-free deposits and withdrawals with our wide range of trusted payment methods.</p>
-  </div>
-  
-  <div class="card1">
-    <img src="Assets/Promotions-workspace.png" alt="Exclusive bonuses" />
-    <h3 class="size1">Exclusive Bonuses & Promotions</h3>
-    <p>Unlock rewards, bonuses, and promotions that boost your chances and your winnings!</p>
-  </div>
-  
-  <div class="card1">
-    <img src="Assets/Security-protection-password-locked-padlock.png" alt="Security and Fairness" />
-    <h3 class="size1">Security & Fairness</h3>
-    <p>Play with peace of mind — we guarantee full encryption, transparency, and fairness.</p>
-  </div>
-  
-  <div class="card1">
-    <img src="Assets/Cards-game-solitaire-poker-blackjack-casino.png" alt="Live Dealer Games" />
-    <h3 class="size1">Live Dealer Games</h3>
-    <p>Experience real casino thrills with live dealers, all from the comfort of your home.</p>
-  </div>
-  
-  <div class="card1">
-    <img src="Assets/Casino-gamble-gambling.png" alt="Progressive Jackpots" />
-    <h3 class="size1">Progressive Jackpots</h3>
-    <p>Chase massive wins with games where jackpots grow bigger every minute!</p>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    
+    <div class="swiper-slide">
+      <div class="card1">
+        <img src="Assets/Casino-seven-lucky-slot-machine (1).png" alt="Large game selection" />
+        <h3 class="size1">Large Game Selection</h3>
+        <p>Explore a massive library of classics and new hits. Your perfect game is just a click away.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card1">
+        <img src="Assets/Withdrawl-finance-economy-money-bank-payment-dollar.png" alt="Multiple payment options" />
+        <h3 class="size1">Multiple Payment Options</h3>
+        <p>Enjoy hassle-free deposits and withdrawals with our wide range of trusted payment methods.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card1">
+        <img src="Assets/Promotions-workspace.png" alt="Exclusive bonuses" />
+        <h3 class="size1">Exclusive Bonuses & Promotions</h3>
+        <p>Unlock rewards, bonuses, and promotions that boost your chances and your winnings!</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card1">
+        <img src="Assets/Security-protection-password-locked-padlock.png" alt="Security and Fairness" />
+        <h3 class="size1">Security & Fairness</h3>
+        <p>Play with peace of mind — we guarantee full encryption, transparency, and fairness.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card1">
+        <img src="Assets/Cards-game-solitaire-poker-blackjack-casino.png" alt="Live Dealer Games" />
+        <h3 class="size1">Live Dealer Games</h3>
+        <p>Experience real casino thrills with live dealers, all from the comfort of your home.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card1">
+        <img src="Assets/Casino-gamble-gambling.png" alt="Progressive Jackpots" />
+        <h3 class="size1">Progressive Jackpots</h3>
+        <p>Chase massive wins with games where jackpots grow bigger every minute!</p>
+      </div>
+    </div>
+
   </div>
 </div>
+
 
 
 <section class="diamond-exchange-section">
@@ -465,7 +555,7 @@
     <div class="footer-column">
       <h3>Payment Methods</h3>
       <div class="payment-logos">
-        <img src= "Assets\paytm.webp"/>
+        <img src= "Assets\paytm_ss.jpg"/>
       </div>
     </div>
 

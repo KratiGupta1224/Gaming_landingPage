@@ -42,3 +42,18 @@ counters.forEach(counter => {
 
   updateCount();
 });
+
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,        // Show 3 cards at a time
+    spaceBetween: 30,        // Space between cards
+    loop: true,              // Infinite loop
+    autoplay: {
+      delay: 3000,           // 3 seconds delay
+      disableOnInteraction: false,
+    },
+    speed: 800,              // Smooth transition speed
+  });
+
+
+
