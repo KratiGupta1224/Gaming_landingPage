@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /login/
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://playbro.com/sitemap.xml
+Sitemap: https://playbro.com/sitemap-home.xml
+Sitemap: https://playbro.com/sitemap-sports.xml
+Sitemap: https://playbro.com/casino/sitemap-casino.xml
+Sitemap: https://playbro.com/slot-games/sitemap-slot-games.xml
+Sitemap: https://playbro.com/blogs/sitemap-blogs.xml

@@ -6,6 +6,9 @@
   <title>PLAYBRO - Welcome</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -60,7 +63,7 @@
       <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
         Discover the most epic titles, join a vibrant community, and level up your gaming experience with PLAYBRO.
       </p>
-      <a href="#" class="bg-indigo-600 hover:bg-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition">
+      <a href="#favorite" class="bg-indigo-600 hover:bg-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition">
         Start Playing
       </a>
     </div>
@@ -153,8 +156,8 @@
       </div>
   
     </div>
-  
-    <button class="cta-btn">Play Now</button>
+    <a href="#favorite">
+    <button class="cta-btn">Play Now</button> </a>
   </div>
   
 
@@ -304,7 +307,7 @@
 
 
 <section class="diamond-exchange-section">
-<div class="neon-text2">Explore Your Favourite Games</div>
+<div class="neon-text2" id="favorite">Explore Your Favourite Games</div>
 
 <div class = "cards1">
   <div class = "card2">
@@ -419,7 +422,7 @@
     <div class="faq-item active">
       <div class="faq-question">
         1. Can I use my PLAYBRO Betting ID on multiple devices?
-        <span>+</span>
+        <span>-</span>
       </div>
       <div class="faq-answer">
         Yes, you can log in to your PLAYBRO account across multiple devices using the same credentials.
@@ -480,7 +483,7 @@
     <div class="footer-column">
       <h3>Payment Methods</h3>
       <div class="payment-logos">
-        <img src= "Assets\paytm_ss.jpg"/>
+        <img src= "Assets\payment.jpg"/>
       </div>
     </div>
 
